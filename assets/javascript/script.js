@@ -54,6 +54,7 @@ $("#scheduleContainer").on("click", ".saveBtn", event => {
 
     events.splice(hour - 9, 1, { hour, text, date });
     storeEvents();
+    renderEvents();
 });
 
 init();
