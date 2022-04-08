@@ -83,4 +83,9 @@ textarea {
 #scheduleContainer .col-1 {
   padding-right: 0;
   padding-left: 0;
+  height: 80px;
+}
+
+#scheduleContainer .row {
+  margin-bottom: 1px;
 }
