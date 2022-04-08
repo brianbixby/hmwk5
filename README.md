@@ -4,7 +4,7 @@
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+You'll need to use the [Moment.js](https://momentjs.com/){:target="\_blank"} library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
 ## User Story
 
@@ -97,7 +97,6 @@ You are required to submit the following for review:
 - - -
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 
+<!-- https://brianbixby.github.io/hmwk5/
 
-https://brianbixby.github.io/hmwk5/
-
-https://github.com/brianbixby/hmwk5
+https://github.com/brianbixby/hmwk5 -->

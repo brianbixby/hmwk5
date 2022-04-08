@@ -79,8 +79,15 @@ textarea {
   height: 100%;
 }
 
-#scheduleContainer .col-10,
-#scheduleContainer .col-1 {
+#scheduleContainer .saveBtn {
+  border-color: transparent;
+  border-left: 1px solid black;
+}
+
+#scheduleContainer .col-8,
+#scheduleContainer .col-sm-10,
+#scheduleContainer .col-sm-1,
+#scheduleContainer .col-2 {
   padding-right: 0;
   padding-left: 0;
   height: 80px;
@@ -88,4 +95,36 @@ textarea {
 
 #scheduleContainer .row {
   margin-bottom: 1px;
+}
+
+#scheduleContainer .hour p {
+  padding-left: calc((100% - 45px));
+  margin-top: -10px;
+}
+
+.saveBtn i.fas:active {
+  color: black;
+}
+
+/* media queries */
+@media (max-width: 520px) {
+
+  #scheduleContainer .hour,
+  #scheduleContainer .saveCol {
+    -ms-flex: 0 0 16.666666%;
+    flex: 0 0 16.666666%;
+    max-width: 16.666666%;
+  }
+
+  #scheduleContainer .eventCol {
+    -ms-flex: 0 0 66.666666%;
+    flex: 0 0 66.666666%;
+    max-width: 66.666666%;
+  }
+}
+
+@media (max-width: 520px) {
+  .display-3 {
+    font-size: 3.7rem;
+  }
 }
