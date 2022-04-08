@@ -6,7 +6,7 @@ function setDate() {
     $("#currentDay").text(moment().format('dddd, MMM Do'));
 }
 
-setDate()
+setDate();
 
 function applyColor() {
     var currentHour = moment().hours();
@@ -38,12 +38,13 @@ function init() {
     if (storedEvents !== null) {
         events = storedEvents;
     }
-
     renderEvents();
 }
 
 function storeEvents() {
     localStorage.setItem("events", JSON.stringify(events));
+    setDate();
+    applyColor();
 }
 
 $("#scheduleContainer").on("click", ".saveBtn", event => {
@@ -53,7 +54,6 @@ $("#scheduleContainer").on("click", ".saveBtn", event => {
 
     events.splice(hour - 9, 1, { hour, text, date });
     storeEvents();
-    // renderEvents();
 });
 
 init();
